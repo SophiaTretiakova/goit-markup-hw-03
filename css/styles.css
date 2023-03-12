@@ -140,10 +140,8 @@ body{
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
-  width: 496px;
+  margin-bottom: 48px;
+  width: 515px;
   text-align: center;
 }
 .button-title-item{
@@ -199,7 +197,7 @@ body{
     justify-content: space-between;
 }
 .advantage-list-item:not(:last-child){
-    padding-right: 24px;
+    margin-right: 24px;
 }
 .advantage-header{
     font-weight: 500;
@@ -210,6 +208,7 @@ body{
 }
 .advantage-paragraph{
     color: var(--text-color);
+    margin-top: 8px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -235,6 +234,7 @@ body{
 }
 .team-members-description{
     color: var(--text-color);
+    margin-top: 8px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -314,8 +314,11 @@ body{
 .portfolio-sample-list-item:not(:nth-child(3n)){
    margin-right: 24px;
 }
-.portfolio-sample-list-item{
+.portfolio-sample-list-item:not(:nth-child(n+7)){
     margin-bottom: 48px;
+}
+.portfolio-sample-list-item:nth-child(n+7){
+    padding-bottom: 120px;
 }
 
 .portfolio-sample-title{
@@ -327,6 +330,7 @@ body{
 }
 .portfolio-sample-description{
     color: var(--text-color);
+    margin-top: 8px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
